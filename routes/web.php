@@ -56,3 +56,7 @@ Route::get('/perfil', function () {
 Route::get('/bandeja', function () {
     return view('adm/bandeja');
 });
+
+Route::get('/pagamento', function () {
+    return view('adm/pagamento');
+});
