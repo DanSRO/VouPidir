@@ -5,22 +5,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/logo.png">
-  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{asset('img/logo.png')}}">
+  <link rel="icon" type="image/png" href="{{asset('img/logo.png')}}">
   <title>
    Meu perfil
   </title>
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
   <!-- Nucleo Icons -->
-  <link href="css/nucleo-icons.css" rel="stylesheet" />
-  <link href="css/nucleo-svg.css" rel="stylesheet" />
+  <link href="{{asset('css/nucleo-icons.css')}}" rel="stylesheet" />
+  <link href="{{asset('css/nucleo-svg.css')}}" rel="stylesheet" />
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
   <!-- Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
   <!-- CSS Files -->
-  <link id="pagestyle" href="css/material-dashboard.css?v=3.0.0" rel="stylesheet" />
+  <link id="pagestyle" href="{{asset('css/material-dashboard.css?v=3.0.0')}}" rel="stylesheet" />
 </head>
 
 <body class="">
@@ -30,7 +30,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg blur border-radius-xl top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4" id="navbarColorOnResize">
           <div class="container-fluid ps-2 pe-0">
-            <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 " href="../pages/dashboard.html">
+            <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 " href="{{asset('../pages/dashboard.html')}}">
              Navegação do usuário
             </a>
             <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,25 +43,25 @@
             <div class="collapse navbar-collapse" id="navigation">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                  <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="/menu">
+                  <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="{{asset('menu')}}">
                     <i class="fa fa-chart-pie opacity-6 text-dark me-1"></i>
                    Início
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-2" href="/perfil">
+                  <a class="nav-link me-2" href="{{asset('perfil')}}">
                     <i class="fa fa-user opacity-6 text-dark me-1"></i>
                    Meu perfil
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-2" href="/criar">
+                  <a class="nav-link me-2" href="{{asset('criar')}}">
                     <i class="fas fa-user-circle opacity-6 text-dark me-1"></i>
                     Criar conta
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-2" href="/login">
+                  <a class="nav-link me-2" href="{{asset('login')}}">
                     <i class="fas fa-key opacity-6 text-dark me-1"></i>
                     Logar
                   </a>
@@ -131,7 +131,7 @@
                 <div class="card-footer text-center pt-0 px-lg-2 px-1">
                   <p class="mb-2 text-sm mx-auto">
                    Já possui uma conta?
-                    <a href="/login" class="text-primary text-gradient font-weight-bold">Acessar conta</a>
+                    <a href="{{asset('login')}}" class="text-primary text-gradient font-weight-bold">Acessar conta</a>
                   </p>
                 </div>
               </div>
@@ -143,14 +143,14 @@
   </main> --}}
 
   <div class="container-fluid px-2 px-md-4">
-    <div class="page-header min-height-300 border-radius-xl mt-4" style="background-image: url('img/illustrations/voupedirMofdi.png');">
+    <div class="page-header min-height-300 border-radius-xl mt-4" style="background-image: '{{asset(`img/illustrations/voupedirMofdi.png`)}}';">
       <span class="mask  bg-gradient-primary  opacity-6"></span>
     </div>
     <div class="card card-body mx-3 mx-md-4 mt-n6">
       <div class="row gx-4 mb-2">
         <div class="col-auto">
           <div class="avatar avatar-xl position-relative">
-            <img src="img/logo.png" alt="profile_image" class="w-100 border-radius-lg shadow-sm">
+            <img src="{{asset('img/logo.png')}}" alt="profile_image" class="w-100 border-radius-lg shadow-sm">
           </div>
         </div>
         <div class="col-auto my-auto">
@@ -171,12 +171,12 @@
             <ul class="nav nav-pills nav-fill p-1" role="tablist">
               <li class="nav-item">
                 
-               {{--  <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="/menu">
+               {{--  <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="{{asset/menu">
                   <i class="fa fa-chart-pie opacity-6 text-dark me-1"></i>
                  Início
                 </a> --}}
                 
-                <a class="nav-link mb-0 px-0 py-1 active " href="/menu" aria-selected="true">
+                <a class="nav-link mb-0 px-0 py-1 active " href="{{asset('menu')}}" aria-selected="true">
                   <i class="material-icons text-lg position-relative">home</i>
                   <span class="ms-1">Acessar menu</span>
                 </a>
@@ -264,10 +264,10 @@
 
 
   <!--   Core JS Files   -->
-  <script src="js/core/popper.min.js"></script>
-  <script src="js/core/bootstrap.min.js"></script>
-  <script src="js/plugins/perfect-scrollbar.min.js"></script>
-  <script src="js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="{{asset('js/core/popper.min.js')}}"></script>
+  <script src="{{asset('js/core/bootstrap.min.js')}}"></script>
+  <script src="{{asset('js/plugins/perfect-scrollbar.min.js')}}"></script>
+  <script src="{{asset('js/plugins/smooth-scrollbar.min.js')}}"></script>
   <script>
     var win = navigator.platform.indexOf('Win') > -1;
     if (win && document.querySelector('#sidenav-scrollbar')) {
@@ -278,9 +278,9 @@
     }
   </script>
   <!-- Github buttons -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script async defer src="{{asset('https://buttons.github.io/buttons.js')}}"></script>
   <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="js/material-dashboard.min.js?v=3.0.0"></script>
+  <script src="{{asset('js/material-dashboard.min.js?v=3.0.0')}}"></script>
 </body>
 
 </html>
