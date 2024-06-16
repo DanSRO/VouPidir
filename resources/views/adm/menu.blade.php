@@ -51,32 +51,32 @@
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center me-2 active" aria-current="page"
-                    href="{{asset('menu')}}">
+                    href="{{route('menu')}}">
                     <i class="fa fa-chart-pie opacity-6 text-dark me-1"></i>
                     Início
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-2" href="{{asset('perfil')}}">
+                  <a class="nav-link me-2" href="{{route('perfil')}}">
                     <i class="fa fa-user opacity-6 text-dark me-1"></i>
                     Meu perfil
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-2" href="{{asset('register')}}">
+                  <a class="nav-link me-2" href="{{route('register')}}">
                     <i class="fas fa-user-circle opacity-6 text-dark me-1"></i>
                     Criar conta
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-2" href="{{asset('login')}}">
+                  <a class="nav-link me-2" href="{{route('login')}}">
                     <i class="fas fa-key opacity-6 text-dark me-1"></i>
                     Logar
                   </a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link me-2" href="{{asset('bandeja')}}">
+                  <a class="nav-link me-2" href="{{route('bandeja')}}">
                     <i class="fa fa-shopping-cart opacity-6 text-dark me-1"></i>
                     Pedidos
                   </a>

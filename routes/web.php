@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/adm/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/adm/login', [LoginController::class, 'login']);
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::get('/adm/criarConta', [LoginController::class, 'showRegistrationForm'])->name('register');
 Route::post('/adm/criarConta', [LoginController::class, 'register']);
