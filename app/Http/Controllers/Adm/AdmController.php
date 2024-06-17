@@ -20,4 +20,16 @@ class AdmController extends Controller
     public function pagamento(){
         return view('adm/pagamento');
     }
+    
+    public function dashboard(){
+        return view('/dashboard');
+    }
+    
+    public function produtos(){
+        return view('/produtos');
+    }
+    
+    public function funcionarios(){
+        return view('/funcionarios');
+    }
 }

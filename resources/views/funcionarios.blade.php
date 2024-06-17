@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/logo.png">
-  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{asset('img/logo.png')}}">
+  <link rel="icon" type="image/png" href="{{asset('img/logo.png')}}">
   <title>
     Funcionários
   </title>
@@ -13,8 +13,8 @@
   <link rel="stylesheet" type="text/css"
     href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
   <!-- Nucleo Icons -->
-  <link href="css/nucleo-icons.css" rel="stylesheet" />
-  <link href="css/nucleo-svg.css" rel="stylesheet" />
+  <link href="{{asset('css/nucleo-icons.css')}}" rel="stylesheet" />
+  <link href="{{asset('css/nucleo-svg.css')}}" rel="stylesheet" />
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
   <!-- Material Icons -->
@@ -32,7 +32,7 @@
         aria-hidden="true" id="iconSidenav"></i>
       <a class="navbar-brand m-0" href="#"
         target="_blank">
-        <img src="img/voupedirbrancoTot.png" class="navbar-brand-img h-100" alt="main_logo">
+        <img src="{{asset('img/voupedirbrancoTot.png')}}" class="navbar-brand-img h-100" alt="main_logo">
         <span class="ms-1 font-weight-bold text-white"></span>
       </a>
     </div>
@@ -40,7 +40,7 @@
     <div class="collapse navbar-collapse  w-auto  max-height-vh-100" id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-white" href="/painel">
+          <a class="nav-link text-white" href="{{route('dashboard')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">dashboard</i>
             </div>
@@ -48,7 +48,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white  active bg-gradient-danger" href="../pages/funcionarios.html">
+          <a class="nav-link text-white  active bg-gradient-danger" href="{{route('funcionarios')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">person</i>
             </div>
@@ -57,7 +57,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link text-white " href="/produtos">
+          <a class="nav-link text-white " href="{{route('produtos')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">table_view</i>
             </div>
@@ -70,7 +70,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link text-white " href="login">
+          <a class="nav-link text-white " href="{{route('login')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">login</i>
             </div>
@@ -78,7 +78,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="/criar">
+          <a class="nav-link text-white " href="{{route('register')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">assignment</i>
             </div>
@@ -87,7 +87,10 @@
         </li>
       </ul>
     </div>
-    
+    <!-- Indicador de rolagem -->
+    <div class="scroll-indicator text-center mt-2">
+      <i class="fas fa-chevron-down text-white"></i>
+    </div>
   </aside>
   <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
     <!-- Navbar -->
@@ -367,7 +370,7 @@
                             <td>
                               <div class="d-flex px-2 py-1">
                                 <div>
-                                  <img src="../img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                                  <img src="{{asset('img/team-2.jpg')}}" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
                                 </div>
                                 <div class="d-flex flex-column justify-content-center">
                                   <h6 class="mb-0 text-sm">John Michael</h6>
@@ -395,7 +398,7 @@
                             <td>
                               <div class="d-flex px-2 py-1">
                                 <div>
-                                  <img src="../img/team-3.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user2">
+                                  <img src="{{asset('img/team-2.jpg')}}" class="avatar avatar-sm me-3 border-radius-lg" alt="user2">
                                 </div>
                                 <div class="d-flex flex-column justify-content-center">
                                   <h6 class="mb-0 text-sm">Alexa Liras</h6>
@@ -519,10 +522,10 @@
     </div>
   </div> 
   <!--   Core JS Files   -->
-  <script src="js/core/popper.min.js"></script>
-  <script src="js/core/bootstrap.min.js"></script>
-  <script src="js/plugins/perfect-scrollbar.min.js"></script>
-  <script src="js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="{{asset('js/core/popper.min.js')}}"></script>
+  <script src="{{asset('js/core/bootstrap.min.js')}}"></script>
+  <script src="{{asset('js/plugins/perfect-scrollbar.min.js')}}"></script>
+  <script src="{{asset('js/plugins/smooth-scrollbar.min.js')}}"></script>
   <script>
     var win = navigator.platform.indexOf('Win') > -1;
     if (win && document.querySelector('#sidenav-scrollbar')) {

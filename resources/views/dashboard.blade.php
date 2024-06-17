@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/logo.png">
-    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{asset('img/logo.png')}}">
+    <link rel="icon" type="image/png" href="{{asset('img/logo.png')}}">
     <title>
       Painel
     </title>
@@ -15,8 +15,8 @@
     <link rel="stylesheet" type="text/css"
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
     <!-- Nucleo Icons -->
-    <link href="css/nucleo-icons.css" rel="stylesheet" />
-    <link href="css/nucleo-svg.css" rel="stylesheet" />
+    <link href="{{asset('css/nucleo-icons.css')}}" rel="stylesheet" />
+    <link href="{{asset('css/nucleo-svg.css')}}" rel="stylesheet" />
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <!-- Material Icons -->
@@ -34,14 +34,14 @@
       <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
         aria-hidden="true" id="iconSidenav"></i>
       <a class="navbar-brand m-0" href="#" target="_blank">
-        <img src="img/voupedirbrancoTot.png" class="navbar-brand-img h-100" alt="main_logo">
+        <img src="{{asset('img/voupedirbrancoTot.png')}}" class="navbar-brand-img h-100" alt="main_logo">
       </a>
     </div>
     <hr class="horizontal light mt-0 mb-2">
     <div class="collapse navbar-collapse  w-auto  max-height-vh-100" id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-white active bg-gradient-danger" href="/dashboard">
+          <a class="nav-link text-white active bg-gradient-danger" href="{{route('dashboard')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">dashboard</i>
             </div>
@@ -49,7 +49,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="/funcionarios">
+          <a class="nav-link text-white " href="{{route('funcionarios')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">person</i>
             </div>
@@ -58,7 +58,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link text-white " href="/produtos">
+          <a class="nav-link text-white " href="{{route('produtos')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">table_view</i>
             </div>
@@ -71,7 +71,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link text-white " href="/login">
+          <a class="nav-link text-white " href="{{route('login')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">login</i>
             </div>
@@ -79,7 +79,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="/criar">
+          <a class="nav-link text-white " href="{{route('register')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">assignment</i>
             </div>
@@ -88,12 +88,15 @@
         </li>
       </ul>
     </div>
-
+    <!-- Indicador de rolagem -->
+    <div class="scroll-indicator text-center mt-2">
+      <i class="fas fa-chevron-down text-white"></i>
+    </div>
 
   </aside>
   <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
     <!-- Navbar -->
-    <nav id="navbarColorOnResize" class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur"
+    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur"
       navbar-scroll="true" >
       <div class="container-fluid py-1 px-3">
         <nav aria-label="breadcrumb">
@@ -523,11 +526,11 @@
     </div>
   </div>
   <!--   Core JS Files   -->
-  <script src="js/core/popper.min.js"></script>
-  <script src="js/core/bootstrap.min.js"></script>
-  <script src="js/plugins/perfect-scrollbar.min.js"></script>
-  <script src="js/plugins/smooth-scrollbar.min.js"></script>
-  <script src="js/plugins/chartjs.min.js"></script>
+  <script src="{{asset('js/core/popper.min.js')}}"></script>
+  <script src="{{asset('js/core/bootstrap.min.js')}}"></script>
+  <script src="{{asset('js/plugins/perfect-scrollbar.min.js')}}"></script>
+  <script src="{{asset('js/plugins/smooth-scrollbar.min.js')}}"></script>
+  <script src="{{asset('js/plugins/chartjs.min.js')}}"></script>
 
   <script>
     var win = navigator.platform.indexOf('Win') > -1;

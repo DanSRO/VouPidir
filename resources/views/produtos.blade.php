@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/logo.png">
-  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{asset('img/logo.png')}}">
+  <link rel="icon" type="image/png" href="{{asset('img/logo.png')}}">
   <title>
     Produtos
   </title>
@@ -13,8 +13,8 @@
   <link rel="stylesheet" type="text/css"
     href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
   <!-- Nucleo Icons -->
-  <link href="css/nucleo-icons.css" rel="stylesheet" />
-  <link href="css/nucleo-svg.css" rel="stylesheet" />
+  <link href="{{asset('css/nucleo-icons.css')}}" rel="stylesheet" />
+  <link href="{{asset('css/nucleo-svg.css')}}" rel="stylesheet" />
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
   <!-- Material Icons -->
@@ -39,7 +39,7 @@
     <div class="collapse navbar-collapse  w-auto  max-height-vh-100" id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-white" href="/painel">
+          <a class="nav-link text-white" href="{{route('dashboard')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">dashboard</i>
             </div>
@@ -47,7 +47,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="/funcionarios">
+          <a class="nav-link text-white" href="{{route('funcionarios')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">person</i>
             </div>
@@ -56,7 +56,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link text-white active bg-gradient-danger" href="/produtos">
+          <a class="nav-link text-white active bg-gradient-danger" href="{{route('produtos')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">table_view</i>
             </div>
@@ -69,7 +69,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link text-white " href="/login">
+          <a class="nav-link text-white " href="{{route('login')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">login</i>
             </div>
@@ -77,7 +77,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="/criar">
+          <a class="nav-link text-white " href="{{route('register')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">assignment</i>
             </div>

@@ -121,7 +121,7 @@
                   </div>
                   <p class="mt-4 text-sm text-center">
                    Não tem uma conta?
-                    <a href="/register" class="text-primary text-gradient font-weight-bold">Criar agora</a>
+                    <a href="{{route('register')}}" class="text-primary text-gradient font-weight-bold">Criar agora</a>
                     <label class="mb-0 ms-2"><a href="{{ route('password.request') }}">Esqueci minha senha</a></label>
                   </p>
                 </form>

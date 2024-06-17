@@ -48,7 +48,7 @@ class LoginController extends Controller
 
         Auth::login($user);
 
-        return redirect()->route('painel'); // Redirecione para a página inicial ou outra página desejada
+        return redirect()->route('dashboard'); // Redirecione para a página inicial ou outra página desejada
     }
 
     public function showLinkRequestForm()

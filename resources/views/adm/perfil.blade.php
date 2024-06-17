@@ -28,7 +28,7 @@
     <div class="row">
       <div class="col-12">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg blur border-radius-xl top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4" id="navbarColorOnResize">
+        <nav class="navbar navbar-expand-lg blur border-radius-xl top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4" >
           <div class="container-fluid ps-2 pe-0">
             <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 " href="{{asset('../pages/dashboard.html')}}">
              Navegação do usuário
@@ -43,25 +43,25 @@
             <div class="collapse navbar-collapse" id="navigation">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                  <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="{{asset('menu')}}">
+                  <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="{{route('menu')}}">
                     <i class="fa fa-chart-pie opacity-6 text-dark me-1"></i>
                    Início
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-2" href="{{asset('perfil')}}">
+                  <a class="nav-link me-2" href="{{route('perfil')}}">
                     <i class="fa fa-user opacity-6 text-dark me-1"></i>
                    Meu perfil
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-2" href="{{asset('criar')}}">
+                  <a class="nav-link me-2" href="{{route('register')}}">
                     <i class="fas fa-user-circle opacity-6 text-dark me-1"></i>
                     Criar conta
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-2" href="{{asset('login')}}">
+                  <a class="nav-link me-2" href="{{route('login')}}">
                     <i class="fas fa-key opacity-6 text-dark me-1"></i>
                     Logar
                   </a>
@@ -131,7 +131,7 @@
                 <div class="card-footer text-center pt-0 px-lg-2 px-1">
                   <p class="mb-2 text-sm mx-auto">
                    Já possui uma conta?
-                    <a href="{{asset('login')}}" class="text-primary text-gradient font-weight-bold">Acessar conta</a>
+                    <a href="{{route('login')}}" class="text-primary text-gradient font-weight-bold">Acessar conta</a>
                   </p>
                 </div>
               </div>
@@ -171,12 +171,12 @@
             <ul class="nav nav-pills nav-fill p-1" role="tablist">
               <li class="nav-item">
                 
-               {{--  <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="{{asset/menu">
+               {{--  <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="{{route('menu')}}">
                   <i class="fa fa-chart-pie opacity-6 text-dark me-1"></i>
                  Início
                 </a> --}}
                 
-                <a class="nav-link mb-0 px-0 py-1 active " href="{{asset('menu')}}" aria-selected="true">
+                <a class="nav-link mb-0 px-0 py-1 active " href="{{route('menu')}}" aria-selected="true">
                   <i class="material-icons text-lg position-relative">home</i>
                   <span class="ms-1">Acessar menu</span>
                 </a>
